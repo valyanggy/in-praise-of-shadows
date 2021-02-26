@@ -1,0 +1,107 @@
+@font-face {
+	font-family: leiko ;
+	src: url('../fonts/leiko-regular-webfont.woff2') format('woff2'),
+		 url('../fonts/leiko-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+  }
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+
+body {
+	background: rgb(0, 0, 0);
+	color: #8a8c7e;
+	font-size: 200%;
+	line-height: 1.25;
+	font-family: leiko,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+a {
+	color: #000000;
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover, a:focus {
+	color: #373e18;
+}
+
+.codrops-demos a,
+section button {
+	display: inline-block;
+	background: #a9a9a9;
+	color: #fff;
+	font-weight: 400;
+	padding: 10px 20px;
+	margin: 5px;
+	border-radius: 2px;
+	letter-spacing: 1px;
+}
+
+
+section {
+	padding: 0.1em 0.5em 1em;
+	text-align: center;
+	font-size: 0.6em;
+}
+
+section p {
+	max-width: 600px;
+	margin: 0 auto;
+	font-size: 1.5rem;
+}
+
+section h1 {
+	max-width: 600px;
+	margin: 0 auto;
+	font-size: 1.8rem;
+	padding: 2rem 0.5rem 0;
+}
+
+section button {
+	border: none;
+	padding: 0rem;
+	outline: none;
+	background: #000000;
+}
+
+.related > a {
+	border: 1px solid #99cc33;
+	display: inline-block;
+	text-align: center;
+	margin: 20px 10px;
+	padding: 25px;
+	color: #99cc33;
+	opacity: 0.8;
+	-webkit-transition: color 0.3s, border-color 0.3s;
+	transition: color 0.3s, border-color 0.3s;
+	-webkit-backface-visibility: hidden;
+}
+
+.related a:hover {
+	border-color: #82b222;
+	color: #82b222;
+}
+
+.related a img {
+	max-width: 100%;
+}
+
+.related a h3 {
+	margin: 0;
+	padding: 0.5em 0 0.3em;
+	max-width: 300px;
+	text-align: left;
+	font-size: 65%;
+	font-weight: 400;
+}
+
+@media screen and (max-width: 25em) {
+	.codrops-icon span {
+		display: none;
+	}
+}

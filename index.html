@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>In Praise of Shadows</title>
+	<meta name="keywords" content="fullscreen overlay, overlay menu, inspiration, styles, effect, css" />
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/style0.css" />
+	<link rel="stylesheet" type="text/css" href="css/rangeslider.css">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/rangeslider.js" type="text/javascript" defer></script>
+	<link rel="stylesheet" href="https://use.typekit.net/kkc6ujo.css">
+	<script src="js/modernizr.custom.js"></script>
+	<script>
+		(function (d) {
+			var config = {
+				kitId: 'fgf2bqn',
+				scriptTimeout: 3000,
+				async: true
+			},
+				h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+		})(document);
+	</script>
+</head>
+
+<body>
+	<div class="sticky">
+		<div class="nav-container">
+
+			<section>
+				<h1><button id="trigger-overlay" type="button">In Praise of Shadows</button></h1>
+				<p>Jun'ichirō Tanizaki</p>
+			</section>
+
+		</div>
+
+
+		<div class="slider">
+			<label for="opacity-slider">闇</label>
+			<input type="range" min="0" max="1" value="0" id="opacity-slider" step="0.01">
+			<label for="opacity-slider">光</label>
+		</div>
+
+	</div>
+
+
+
+	<div class="shadows-container">
+		<div class="shadows-side">
+			<div class="shadows"></div>
+			<div class="shadows"></div>
+			<div class="shadows"></div>
+			<div class="shadows"></div>
+			<div class="shadows"></div>
+			<div class="shadows"></div>
+			<div class="shadows"></div>
+			<div class="shadows"></div>
+			<div class="shadows"></div>
+		</div>
+		<div class="shadows-side">
+			<div class="shadows"></div>
+			<div class="shadows"></div>
+			<div class="shadows"></div>
+			<div class="shadows"></div>
+			<div class="shadows"></div>
+			<div class="shadows"></div>
+			<div class="shadows"></div>
+			<div class="shadows"></div>
+			<div class="shadows"></div>
+
+
+		</div>
+
+
+	</div>
+
+	<div class="enter">
+		<a href="part1.html">enter reading.</a>
+
+	</div>
+
+	<div class="title">
+		<p class="a">In</p>
+		<p class="b">Praise of</p>
+		<p class="c"> Shadows</p>
+	</div>
+
+
+
+
+
+<!-- navigation menu below: -->
+
+
+
+
+	<div class="overlay overlay-hugeinc">
+		<nav>
+			<ul>
+				<li><a href="index.html">0</a></li>
+				<li><a href="part1.html">1</a></li>
+				<li><a href="part2.html">2</a></li>
+				<li><a href="part3.html">3</a></li>
+			</ul>
+		</nav>
+	</div>
+
+
+	<script src="js/classie.js"></script>
+	<script src="js/demo1.js"></script>
+</body>
+
+</html>

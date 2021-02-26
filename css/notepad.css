@@ -1,0 +1,256 @@
+/* Overlay style */
+.sticky{
+	align-items: center;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    left:0;
+    position: fixed;
+    right: 0;
+    text-align: center;
+	top: 0;
+	z-index: 1;
+
+}
+
+.nav-container{
+	align-items: flex-start;
+	/* z-index:101; */
+
+}
+
+/* #trigger-overlay{
+	z-index:101;
+} */
+
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.9);
+	
+}
+
+/* Overlay closing cross */
+.overlay .overlay-close {
+	width: 2rem;
+	height: 2rem;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	overflow: hidden;
+	border: none;
+	background: url(../img/cross.png) no-repeat center center;
+	text-indent: 200%;
+	color: transparent;
+	outline: none;
+	z-index: 10;
+	
+}
+
+/* Menu style */
+.overlay nav {
+	text-align: center;
+	position: relative;
+	top: 50%;
+	height: 60%;
+	font-size: 54px;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.overlay ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	display: inline-block;
+	height: 100%;
+	position: relative;
+}
+
+.overlay ul li {
+	display: block;
+	height: 20%;
+	height: calc(100% / 5);
+	min-height: 54px;
+}
+
+.overlay ul li a {
+	font-weight: 300;
+	display: block;
+	color: #fff;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+	color: #000000;
+}
+
+/* Effects */
+.overlay-hugeinc {
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+	transition: opacity 0.5s, visibility 0s 0.5s;
+}
+
+.overlay-hugeinc.open {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+.overlay-hugeinc nav {
+	-webkit-perspective: 1200px;
+	perspective: 1200px;
+}
+
+.overlay-hugeinc nav ul {
+	opacity: 0.4;
+	-webkit-transform: translateY(-25%) rotateX(35deg);
+	transform: translateY(-25%) rotateX(35deg);
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+.overlay-hugeinc.open nav ul {
+	opacity: 1;
+	-webkit-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+}
+
+.overlay-hugeinc.close nav ul {
+	-webkit-transform: translateY(25%) rotateX(-35deg);
+	transform: translateY(25%) rotateX(-35deg);
+}
+
+@media screen and (max-height: 30.5em) {
+	.overlay nav {
+		height: 70%;
+		font-size: 34px;
+	}
+	.overlay ul li {
+		min-height: 34px;
+	}
+}
+
+.page-number{
+	color: rgb(20, 20, 20);
+	font-size: 5rem;
+	align-self:flex-start;
+	margin: 3rem;
+}
+
+.float-container{
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+  grid-template-areas:
+    "nav nav nav nav"
+    "sidebar main main main"
+    "sidebar content1 content2 content3"
+    "sidebar footer footer footer";
+  grid-gap: 0.2rem;
+  font-weight: 800;
+  font-size: 12px;
+  color: #004d40;
+  text-align: center;
+}
+
+
+.bodytext{
+	align-items: center;
+    bottom: 0;
+    display: flex;
+    left:0;
+    /* position: fixed; */
+    right: 0;
+    text-align: center;
+    top: 0;
+    z-index:1;
+	max-width: 180%;
+	
+}
+
+/* .content{
+	z-index: ;
+} */
+
+
+.shadows-container{
+	/* align-items: center; */
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    left:0;
+    position: fixed;
+    right: 0;
+    /* text-align: center; */
+	top: 8%;
+    z-index: -10;
+    max-width:100%;
+    max-height: 85%;
+
+	
+	/* z-index: -1000; */
+
+}
+
+.shadows{
+position: relative;
+width:15vw;
+height: 40vh;
+background: #C2B291;
+filter: blur(10px);
+margin: 0.5rem;
+/* left: 10rem;  */
+/* z-index: -100; */
+/* padding: 10rem; */
+}
+
+
+
+.content{
+	margin: 8rem 5rem;
+	display: flex;
+	flex-direction: column;
+	font-family: a-otf-ryumin-pr6n,serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+.section-1 h1{
+	font-size: 1rem;
+	color: black;
+	position: relative;
+	/* top:35%;
+    left: 20%; */
+    margin: 0 auto;
+    text-align: center;
+	max-width: 68%;
+	color: rgb(31, 31, 31);
+
+}
+
+.section-1 p{
+	font-size: 1.1rem;
+	color: black;
+	position: relative;
+	top:35%;
+	left: 20%;
+	max-width: 75%;
+	color: rgb(31, 31, 31);
+	padding: 6%;
+	line-height: 1.5;
+
+}
+
+
