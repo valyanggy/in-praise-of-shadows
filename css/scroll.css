@@ -1,0 +1,35 @@
+#third {
+    /* background-color: #a6e7c2; */
+    /* width: 3rem;
+    height: 3rem;
+    border-radius: 50%; */
+    animation: fadeOut ease 4s;
+    -webkit-animation: fadeOut ease 4s;
+  }
+
+
+
+  @keyframes fadeOut {
+    0% {opacity:1;}
+    100% {opacity:0;}
+    }
+    
+    @-moz-keyframes fadeOut {
+    0% {opacity:1;}
+    100% {opacity:0;}
+    }
+    
+    @-webkit-keyframes fadeOut {
+    0% {opacity:1;}
+    100% {opacity:0;}
+    }
+    
+    @-o-keyframes fadeOut {
+    0% {opacity:1;}
+    100% {opacity:0;}
+    }
+    
+    @-ms-keyframes fadeOut {
+    0% {opacity:1;}
+    100% {opacity:0;}
+    }

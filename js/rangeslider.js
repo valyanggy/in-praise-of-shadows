@@ -1,5 +1,5 @@
-$("#opacity-slider").on("change mousemove", function () {
-    $("#slider-value").html($(this).val());
+$("#opacity-slider").on("change", function () {
+    // $("#slider-value").html($(this).val());
     $(".shadows").css({
       opacity: $(this).val()
     });

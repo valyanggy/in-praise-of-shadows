@@ -14,8 +14,12 @@
     <link rel="stylesheet" type="text/css" href="css/demo.css" />
     <link rel="stylesheet" type="text/css" href="css/style3.css" />
     <link rel="stylesheet" type="text/css" href="css/rangeslider.css">
-	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="css/scroll.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="js/rangeslider.js" type="text/javascript" defer></script>
+    <script src="js/scroll.js" type="text/javascript" defer></script>
     <link rel="stylesheet" href="https://use.typekit.net/kkc6ujo.css">
     <script src="js/modernizr.custom.js"></script>
     <script>
@@ -47,10 +51,10 @@
 
 
 
-		<div class="slider">
+        <div class="slider">
             <label for="opacity-slider">闇</label>
             <input type="range" min="0" max="1" value="0" id="opacity-slider" step="0.01">
-            <label for="opacity-slider" >光</label>
+            <label for="opacity-slider">光</label>
         </div>
 
     </div>
@@ -58,27 +62,10 @@
 
 
     <div class="shadows-container">
-        <div class="shadows">
-
-            <!-- <div class="sticky-container">
-                <div class="stickyblob"> A Japanese room might be likened to an inkwash painting,
-                </div>
-                <div class="stickyblob"> the paper-paneled shoji being the expanse where the ink is thinnest,
-                </div>
-                <div class="stickyblob"> and the alcove where it is darkest.
-                </div>
-            </div> -->
-
-
-
-
-
-
-
-        </div>
-        <div class="shadows"></div>
-        <div class="shadows"></div>
-        <div class="shadows"></div>
+        <div class="shadows" id="third"></div>
+        <div class="shadows" id="third"></div>
+        <div class="shadows" id="third"></div>
+        <div class="shadows" id="third"></div>
 
 
     </div>
@@ -231,12 +218,14 @@
                 held in such incredibly high esteem.</h1>
         </div>
 
+   
+
 
 
         <p></p>
 
         <div class="next-go">
-            <a href="index.html">start over...</a>
+            <a href="part2.html">continue to the next part...</a>
             
         </div>
         <p></p> 
@@ -244,6 +233,12 @@
 
 
     </div>
+
+ 
+
+
+
+
 
 
 

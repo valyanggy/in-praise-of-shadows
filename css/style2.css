@@ -104,6 +104,7 @@
 	visibility: visible;
 	-webkit-transition: opacity 0.5s;
 	transition: opacity 0.5s;
+	z-index: 100;
 }
 
 .overlay-hugeinc nav {
@@ -198,6 +199,7 @@ background: #C2B291;
 filter: blur(10px);
 margin: 1.2rem;
 left: 10rem; 
+opacity: 0;
 /* z-index: -100; */
 /* padding: 10rem; */
 }
@@ -234,6 +236,16 @@ left: 10rem;
 	color: rgb(31, 31, 31);
 	padding: 6%;
 	line-height: 1.5;
+
+}
+
+.next-go{
+	position: relative;
+	margin: 0 auto;
+	padding-bottom: 10%;
+	right: -35%;
+	text-decoration: underline;
+	z-index: 99;
 
 }
 
