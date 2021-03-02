@@ -39,9 +39,3 @@
 	closeBttn.addEventListener( 'click', toggleOverlay );
 })();
 
-$('#opacity-slider').on("change mousemove", function() {
-	$('#slider-value').html($(this).val());
-	$('.wrapper img').css({
-	  'opacity': $(this).val()
-	});
-  });

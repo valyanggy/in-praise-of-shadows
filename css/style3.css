@@ -252,14 +252,14 @@ opacity: 0;
 
 .section-1 h2{
 	font-size: 3rem;
-	color: black;
+	color: rgb(31, 31, 31);
     position: relative;
     /* padding-top: 15%; */
 	/* top:35%;
     left: 20%; */
     margin: 10vw auto;
 	max-width: 80%;
-    color: rgb(31, 31, 31);
+    
     line-height: 1.4;
 
 }
@@ -320,6 +320,60 @@ opacity: 0;
 	z-index: 99;
 
 }
+
+
+
+
+
+/* parallax */
+.outer-container {
+	max-width: 80%;
+	margin: auto;
+	width: 90%;
+	padding: 200px 0px;
+	position: relative;
+  }
+  
+
+  
+  .section-title {
+	color: rgb(31, 31, 31);
+	margin: 0;
+	font-size: 3rem;
+	width: 100%;
+	text-align: left;
+	position: absolute;
+	top: 50%;
+	/* left: -190%; */
+	transform: translateY(-50%);
+	z-index: 1;
+	white-space: normal;
+  }
+
+  .paralax-title-left{
+	left: -190%;
+  }
+
+  .paralax-title-right{
+	left: -160%;
+	z-index: -1;
+  }
+
+
+
+  .section-title span {
+	position: relative;
+	display: block;
+  }
+
+
+
+
+
+
+
+
+
 
 @media only screen 
   and (min-device-width: 375px) 
@@ -388,7 +442,18 @@ opacity: 0;
 		font-size: 1rem;
 	  }
 
+	.section-title{
+		font-size:1rem;
+	}
+
+	.paralax-title-left{
+		left: -100%;
+	  }
 	
+	  .paralax-title-right{
+		left: -120%;
+		z-index: -1;
+	  }
 
 
 
