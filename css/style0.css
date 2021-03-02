@@ -217,9 +217,9 @@ opacity: 0;
 
 .fade-in{
     opacity: 0;
-    animation: fadeIn ease 3s;
-    -webkit-animation: fadeIn ease 3s;
-    animation-duration: 19s;
+    animation: fadeIn ease 2s;
+    -webkit-animation: fadeIn ease 2s;
+    animation-duration: 15s;
 }
 
 .second{
@@ -227,8 +227,8 @@ opacity: 0;
     
     animation: fadeIn ease 1s;
     -webkit-animation: fadeIn ease 1s;
-    animation-delay: 10s;
-    animation-duration: 9s;
+    animation-delay: 8s;
+    animation-duration: 10s;
     
    
 
@@ -348,6 +348,7 @@ opacity: 0;
 
 
 .enter{
+    /* font-size: 3rem; */
 	position: absolute;
 	top:80%;
     left: 80%;
@@ -434,15 +435,20 @@ opacity: 0;
     }
 
     .prologue{
-        font-size: 2.8rem;
+        font-size: 2.3rem;
         padding-left: 10%;
         width: 100%;
         margin: 0;
         position: absolute;
-        top: 70%;
+        top: 50%;
         left: 50%;
+        text-align: left;
      
     
+    }
+
+    .enter{
+   font-size: ;
     }
 
 
